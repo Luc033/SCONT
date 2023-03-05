@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="back-end.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+
+<body style="background-color: rgb(243, 255, 255);">
+    <header class="header w3-container w3-purple">
+        <h1 style="text-align:center;" class="logo">SISTEMA DE CONTAGEM DE PASSAGEIROS - SCONT</h1>
+    </header>
+    <main>
+
+        <div class="row">
+
+            <div class="column">
+                <label for="lblTotalVagas">Assentos livres:</label>
+                <label id="lblTotalVagas"></label>
+            </div>
+
+            <div class="column">
+                <div class="divLbl">
+                    <label class="lblTitle" for="lblTotalPass">Total de passageiros: </label>
+                    <label id="lblTotalPass"></label>
+                </div>
+                <div class="divLbl">
+                    <label class="lblTitle" for="lblPassEmPe">Passageiros em pé: </label>
+                    <label id="lblPassEmPe"></label>
+                </div>
+                <div class="divLbl">
+                    <label class="lblTitle" for="lblTotalAssentos">Total de Assentos: </label>
+                    <label id="lblTotalAssentos">
+                        <script>
+                            document.getElementById('lblTotalAssentos').innerHTML = assentos;
+                        </script>
+                    </label>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="row">
+
+            <div class="column columnInput">
+                <label id="saida">SAÍDA</label>
+                <button class="btn w3-btn" onclick="subtrair2()">-2</button> <button class="btn w3-btn" name="btn-1"
+                    onclick="subtrair1()">-1</button>
+            </div>
+
+            <div class="column">
+                <label id="entrada">ENTRADA</label>
+                <button class="btn w3-btn" onclick="somar1()">+1</button> <button class="btn w3-btn"
+                    onclick="somar2()">+2</button>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

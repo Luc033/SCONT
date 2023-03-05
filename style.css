@@ -1,0 +1,61 @@
+.header{
+    padding: 50px 0px;
+}
+
+.logo{
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15 0 15 0;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.columnInput{
+    display: block;
+    justify-content: space-between;
+
+}
+
+.row{
+    margin: 30px 0 15px 0;
+    padding: ;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.btn{
+    background: brown;
+}
+
+#lblTotalVagas{
+    color: red;
+    font-weight: bolder ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large ;
+}
+
+.lblTitle{
+    display: inline-block;
+}
+
+#lblTotalPass{
+    color: blue;
+}
+
+#lblPassEmPe{
+    color: violet;
+}
